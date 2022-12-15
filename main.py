@@ -46,7 +46,7 @@ if __name__ == "__main__":
     CONVERSATION = []
     while True:
         user_input = input("USER: ")
-        CONVERSATION.append("USER: %s" % user_input)
+        CONVERSATION.append(f"USER: {user_input}" )
         TEXT_BLOCK = "\n".join(CONVERSATION)
         current_prompt = f"Hello, {TEXT_BLOCK}"
         current_prompt = f'{current_prompt} \n BOT:'
